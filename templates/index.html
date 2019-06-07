@@ -1,0 +1,36 @@
+  {% extends "base.html" %}
+  {% block content %}
+    {% load static %}
+      <title>{% block title %} Home {% endblock %}</title>
+
+
+       <section class="home-slider owl-carousel">
+
+      <div class="slider-item" style="background-image: url({% static 'cancerApp/img/slider-2.jpg' %});">
+
+        <div class="container">
+          <div class="row slider-text align-items-center">
+            <div class="col-md-7 col-sm-12 element-animate">
+              <h1>We Care about You</h1>
+              <p>Sometimes you get to choose your battles and sometimes they choose you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image: url({% static 'cancerApp/img/slider-1.jpg' %});">
+        <div class="container">
+          <div class="row slider-text align-items-center">
+            <div class="col-md-7 col-sm-12 element-animate">
+              <h1>We Provide Health Care Solutions</h1>
+              <p>As we care about your health, We want to help you to make sure of your health</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  {% endblock %}
+
